@@ -33,7 +33,7 @@ map Q gq
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" In many terminal emulators the mouse works just fine, thus enable it.
+" Sometimes I use a mouse, I know, I'm bad... sometimes.
 if has('mouse')
   set mouse=a
 endif
@@ -45,13 +45,13 @@ syntax enable
 set hlsearch
 
 " Only do this part when compiled with support for autocommands.
+" Should be most cases, like my cases.
 if has("autocmd")
 
   " Enable file type detection.
-  " Use the default filetype settings, so that mail gets 'tw' set to 72,
-  " 'cindent' is on in C files, etc.
-  " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin on
+
+  " Load indent files, because some languages are indent dependent 
   filetype indent on
 
   " Put these in an autocmd group, so that we can delete them easily.
@@ -70,9 +70,10 @@ if has("autocmd")
 
 else
 
-  set autoindent		" always set autoindenting on
+  " Autoindenting, pretty handy
+  set autoindent
 
-endif " has("autocmd")
+endif
 
 " Convenient command to see the difference between the current buffer and the
 " file it was loaded from, thus the changes you made.
