@@ -9,3 +9,5 @@ Then I told myself "Why not."
 So here I am.
 
 Also if you wanna nab some of these, do it.
+
+Expect something useful whenever I feel like it. For now, README's everywhere.
