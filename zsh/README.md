@@ -1,5 +1,3 @@
-Again, something will go here, I promise.
-
 Protip: install [this](https://github.com/nvbn/thefuck).
 
 Pretty fuckin' neat. Props to nvbn for writing it.
